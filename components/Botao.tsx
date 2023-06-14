@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import styles from '../styles/Botao.module.css'
+import Link from 'next/link'
 
 interface BotaoProps {
     texto: string
@@ -11,8 +11,7 @@ export default function Botao(props: BotaoProps) {
     
     function renderizarBotao() {
         return (
-            <button className={styles.botao}>
-                {/*onClick={props.onClick}*/}
+            <button className={styles.botao} onClick={props.onClick}>  
                 {props.texto}
             </button>
         )
